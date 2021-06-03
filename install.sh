@@ -4,7 +4,7 @@
 echo 192.168.1.10 master >> /etc/hosts
 echo 192.168.1.11 client1 >> /etc/hosts
 echo 192.168.1.12 client2 >> /etc/hosts
-echo 192.168.1.13 client2 >> /etc/hosts
+echo 192.168.1.13 client3 >> /etc/hosts
 
 sudo apt-get update
 sudo apt-get -y install open-iscsi
