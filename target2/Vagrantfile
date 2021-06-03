@@ -1,0 +1,15 @@
+Vagrant.configure("2") do |config|
+config.vm.box = "ubuntu/bionic64"
+
+
+
+config.vm.provider "virtualbox" do |vb|
+vb.memory = 2048
+vb.cpus = 1
+vb.name = "client2"
+end
+
+config.vm.network "private_network", ip: "192.168.1.12"
+config.vm.hostname = "client2"
+config.vm.provision :shell, :path => "install.sh" 
+end
